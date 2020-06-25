@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+/*Typography Code*/
+%menu_a {
+    display: inline-block;
+    padding: 7px 18px;
+    text-align: center;
+    margin: 0 3px;
+}
+
+/*Reset Code*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.learnmore1 {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: #fb2056;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+.learnmore2 {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fb2056;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    background:none;
+    font-weight: bold;
+}
+.container_full {
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header_bg {
+    background: rgba(0,0,0,0.3) url(../img/scotland-1761292.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+header {
+    color: #fff;
+}
+header .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    .logo {
+        max-width: 20%;
+        flex-basis: 20%;
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2 {
+            font-size: 26px;
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 100;
+                letter-spacing: 5px;
+            }
+        }
+    }
+    nav {
+        max-width: 80%;
+        flex-basis: 80%;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li{
+                a {
+                    @extend%menu_a;
+                    color: #fff;
+                    border: 2px solid transparent;
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                    font-weight: 600;
+                }
+                a:hover {
+                    border: 2px solid #fff;
+                }
+            }
+            li:last-child a {
+                border: 2px solid #fff;
+            }
+        }
+    }
+}
+header .row_2 {
+    padding: 200px 0 300px 0;
+    text-align: center;
+    p {
+        font-style: italic;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    span {
+        display: inline-block;
+        width: 10%;
+        height: 3px;
+        background-color: #fb2056;
+    }
+    h1 {
+        font-size: 70px;
+        text-transform: uppercase;
+        padding: 10px;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+    }
+}
+.adamsend_bg {
+    background-color: #f4f5f9;
+}
+.adamsend {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    color: #8c949c;
+    span {
+        font-size: 270px;
+        font-family: auto;
+        color: #fff;
+        padding: 70px 0;
+    }
+    .content {
+        padding: 120px 0;
+        padding-left: 60px;
+        text-align: center;
+    }
+    .content p:first-child {
+        font-style: italic;
+        padding-bottom: 30px;
+    }
+    .content p:last-child {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+.upcoming_event_bg {
+    background-color: #fff;
+}
+.upcoming_event {
+    text-align: center;
+    padding: 120px 0;
+    h1 {
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+    span {
+        display: inline-block;
+        width: 6%;
+        height: 3px;
+        background-color: #fb2056;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .coloumn_6 {
+        width: 50%;
+        padding: 80px;
+        color: #333;
+        img {
+            width: 100%;
+            box-shadow: 11px 11px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        h3 {
+            padding: 40px 0 25px 0;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        p {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.hello {
+    text-align: center;
+}
